@@ -39,9 +39,35 @@
     <!-- * Services Section -->
     <!-- ****************************** -->
     <!-- ! TODO: Services Section -->
-    <section>
+       <!-- SERVICES SECTION -->
+        <section id="services-section" class="content-section">
+            <div class="container">
+                <div class="services-header">
+                    <h2>Mental Health Services 💙</h2>
+                    <p>Find the perfect support for you ✨</p>
+                </div>
 
-    </section>
+                <div class="search-filter-bar">
+                    <div class="search-wrapper">
+                        <input type="text" class="search-input" id="searchServices" 
+                               placeholder="Search services...">
+                    </div>
+                    
+                    <div class="filter-pills">
+                        <button class="btn-filter active" data-filter="crisis">Crisis</button>
+                        <button class="btn-filter" data-filter="youth">Youth</button>
+                        <button class="btn-filter" data-filter="professional">Professional</button>
+                        <button class="btn-filter" data-filter="community">Community</button>
+                    </div>
+                    
+                    <div class="results-info">
+                        <span id="resultsCount"></span>
+                    </div>
+                </div>
+
+                <div id="servicesGrid" class="services-grid"></div>
+            </div>
+        </section>
 
     <!-- ****************************** -->
     <!-- * About Section -->
