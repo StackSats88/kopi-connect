@@ -1,43 +1,139 @@
-:root {
-    /* Fun Primary Colors */
-    --primary-color: #FF6B9D;
-    --secondary-color: #FFA07A;
-    --accent-color: #98D8C8;
+/* ========================= */
+/* SERVICES SECTION STYLES   */
+/* ========================= */
 
-    /* Vibrant Palette */
-    --pink: #FF6B9D;
-    --coral: #FFA07A;
-    --mint: #98D8C8;
-    --purple: #A78BFA;
-    --yellow: #FCD34D;
-    --blue: #60A5FA;
-
-    /* Backgrounds */
-    --bg-color: #FFF9F5;
-    --card-bg: #FFFFFF;
-
-    /* Text */
-    --text-dark: #2D3748;
-    --text-medium: #718096;
-    --text-light: #A0AEC0;
-
-    /* Service Colors */
-    --crisis-color: #EF4444;
-    --youth-color: #8B5CF6;
-    --professional-color: #3B82F6;
-    --community-color: #10B981;
-    --workplace-color: #F59E0B;
-
-    --border-color: #E2E8F0;
-    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+#services-section {
+    background: transparent;
+    padding: 60px 0 100px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+#services-section .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
-body {
-    
+.services-header {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.services-header h2 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.2;
+    background: linear-gradient(135deg, var(--pink), var(--coral), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 15px;
+}
+
+.services-header p {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--text-medium);
+}
+
+.search-filter-bar {
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+.search-wrapper {
+    margin-bottom: 30px;
+}
+
+.search-input {
+    width: 100%;
+    padding: 20px 30px;
+    font-size: 18px;
+    border: 3px solid var(--border-color);
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+    font-family: inherit;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--pink);
+    box-shadow: 0 6px 30px rgba(255, 107, 157, 0.2);
+}
+
+.search-input::placeholder {
+    color: var(--text-light);
+}
+
+.filter-pills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.btn-filter {
+    background: white;
+    border: 3px solid var(--border-color);
+    color: var(--text-dark);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.btn-filter:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+.btn-filter.active {
+    background: linear-gradient(135deg, var(--pink), var(--coral));
+    color: white;
+    border-color: var(--pink);
+    box-shadow: 0 6px 25px rgba(255, 107, 157, 0.4);
+}
+
+/* =========================== */
+/* SERVICE CARD STYLES         */
+/* =========================== */
+
+.service-card {
+    background: white;
+    border-radius: 25px;
+    padding: 35px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+    border: 3px solid transparent;
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 45px rgba(255, 107, 157, 0.25);
+    border-color: var(--pink);
+}
+
+.service-card h5 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.service-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-medium);
 }
