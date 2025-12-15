@@ -1,0 +1,15 @@
+
+2. git fetch 
+3. git checkout main
+4. git switch Khairul
+5. git merge
+
+
+Rebase
+======
+
+if conflict occurs:
+git pull --rebase
+resolve conflict (Accept Incoming / Accept Current)
+After clicking the "Merge Conflict"
+git rebase --continue
