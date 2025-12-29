@@ -112,6 +112,8 @@ body {
 
 .content-section.active {
     display: block;
+    width: auto;
+    height: 100dvh;
 }
 
 /* ****************************** */
@@ -122,7 +124,7 @@ body {
     border-radius: 30px;
     box-shadow: 0 10px 40px rgba(255, 107, 157, 0.15);
     border: 3px solid var(--pink);
-    height: 650px;
+    height: 80dvh;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -351,6 +353,41 @@ body {
     font-weight: 500;
 }
 
+/* * Keywords */
+.button-row {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.chat-button {
+    flex: 1;
+}
+
+.chat-buttons-container {
+    background: white;
+    border-top: 3px solid var(--mint);
+    padding: 20px 30px;
+}
+
+.chat-button {
+    
+    border: none;
+    border-radius: 20px;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(255, 107, 157, 0.2);
+    width: 100%;
+}
+
+.chat-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(255, 107, 157, 0.4);
+}
+
 /* ****************************** */
 /* * Services Section */
 /* ****************************** */
@@ -463,18 +500,6 @@ body {
 
 }
 
-
-
-.services-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 35px;
-
-}
-
 .service-card {
     background: white;
     border-radius: 25px;
@@ -511,14 +536,11 @@ body {
 
 }
 
-
-
 .service-card:hover::before {
 
     opacity: 1;
 
 }
-
 
 .service-card:hover {
     transform: translateY(-8px) scale(1.02);
@@ -570,8 +592,6 @@ body {
 
 }
 
-
-
 .badge-crisis {
 
     background: linear-gradient(135deg, #EF4444, #DC2626);
@@ -579,8 +599,6 @@ body {
     color: white;
 
 }
-
-
 
 .badge-youth {
 
@@ -590,8 +608,6 @@ body {
 
 }
 
-
-
 .badge-professional {
 
     background: linear-gradient(135deg, #3B82F6, #2563EB);
@@ -600,8 +616,6 @@ body {
 
 }
 
-
-
 .badge-community {
 
     background: linear-gradient(135deg, #10B981, #059669);
@@ -609,8 +623,6 @@ body {
     color: white;
 
 }
-
-
 
 .badge-workplace {
 
@@ -633,8 +645,6 @@ body {
 
 }
 
-
-
 .service-details {
 
     display: flex;
@@ -649,8 +659,6 @@ body {
 
 }
 
-
-
 .service-detail-item {
 
     display: flex;
@@ -659,7 +667,6 @@ body {
     line-height: 1.6;
     color: var(--text-medium);
 }
-
 
 .service-detail-item strong {
 
@@ -672,8 +679,6 @@ body {
     flex-shrink: 0;
 
 }
-
-
 
 .service-card a {
 
