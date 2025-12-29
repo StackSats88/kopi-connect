@@ -58,6 +58,7 @@ body {
     position: sticky;
     top: 0;
     box-shadow: 0 4px 20px rgba(255, 107, 157, 0.15);
+    z-index: 2147483647;
 }
 
 #mainNav .container-fluid {
@@ -485,7 +486,6 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 220px;
-    position: relative;
     overflow: hidden;
 }
 
@@ -547,12 +547,6 @@ body {
     color: var(--text-dark);
     margin-bottom: 10px;
 }
-
-   flex: 1;
-
-}
-
-
 
 .service-badge {
 
@@ -623,11 +617,13 @@ body {
     background: linear-gradient(135deg, #F59E0B, #D97706);
 
     color: white;
-
+}
 
 .service-description {
+    
     font-size: 16px;
-       line-height: 1.7;
+       
+    line-height: 1.7;
 
     color: var(--text-medium);
 
@@ -731,10 +727,10 @@ body {
 /* ****************************** */
 /* * Mobile Responsive */
 /* ****************************** */
-@media (max-width: 1200px) {}
-
 @media (max-width: 768px) {
+    
     #navbarNav {
         margin-top: 1rem;
     }
+
 }

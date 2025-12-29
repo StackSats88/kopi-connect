@@ -78,119 +78,121 @@
     <!-- ****************************** -->
     <!-- DONE: Services Section -->
     <section id="services-section" class="content-section">
-        <div class="container">
-            <div class="services-header">
-                <h2>Mental Health Services 💙</h2>
-                <p>Find the perfect support for you ✨</p>
+      <div class="container">
+
+        <div class="services-header">
+            <h2>Mental Health Services 💙</h2>
+            <p>Find the perfect support for you ✨</p>
+        </div>
+
+        <div class="search-filter-bar">
+            <div class="search-wrapper">
+                <input type="text" class="search-input" id="searchServices" placeholder="Search services...">
             </div>
 
-            <div class="search-filter-bar">
-                <div class="search-wrapper">
-                    <input type="text" class="search-input" id="searchServices" placeholder="Search services...">
-                </div>
-
-                <div class="filter-pills">
-                    <button class="btn-filter active" data-filter="crisis">Crisis</button>
-                    <button class="btn-filter" data-filter="youth">Youth</button>
-                    <button class="btn-filter" data-filter="professional">Professional</button>
-                    <button class="btn-filter" data-filter="community">Community</button>
-                </div>
-
-
-                <div class="results-info">
-                    <span id="resultsCount"></span>
-                </div>
+            <div class="filter-pills">
+                <button class="btn-filter active" data-filter="crisis">Crisis</button>
+                <button class="btn-filter" data-filter="youth">Youth</button>
+                <button class="btn-filter" data-filter="professional">Professional</button>
+                <button class="btn-filter" data-filter="community">Community</button>
             </div>
 
-           <div id="servicesGrid" class="services-grid">
 
-  <!-- Crisis -->
-  <div class="service-card">
-    <div class="service-card-header">
-      <h5>Samaritans of Singapore</h5>
-      <span class="service-badge badge-crisis">Crisis</span>
-    </div>
+            <div class="results-info">
+                <span id="resultsCount"></span>
+            </div>
+        </div>
 
-    <p class="service-description">
-      24/7 emotional support hotline for anyone in distress or feeling suicidal.
-    </p>
+        <div id="servicesGrid" class="row row-cols-1 row-cols-md-3">
 
-    <div class="service-details">
-      <div class="service-detail-item">
-        <strong>Phone:</strong> 1767
+          <!-- Crisis -->
+          <div class="col service-card">
+            <div class="d-block mx-auto w-100 service-card-header">
+              <h5>Samaritans of Singapore</h5>
+              <span class="service-badge badge-crisis px-2 small rounded-2">Crisis</span>
+            </div>
+
+            <p class="service-description">
+              24/7 emotional support hotline for anyone in distress or feeling suicidal.
+            </p>
+
+            <div class="service-details">
+              <div class="service-detail-item">
+                <strong>Phone:</strong> 1767
+              </div>
+              <div class="service-detail-item">
+                <strong>Hours:</strong> 24/7
+              </div>
+            </div>
+
+            <a href="https://www.sos.org.sg" target="_blank" rel="noopener">
+              Visit Website →
+            </a>
+          </div>
+
+          <!-- Youth -->
+          <div class="col service-card">
+            <div class="d-block mx-auto w-100 service-card-header">
+              <h5>IMH Youth Mental Health</h5>
+              <span class="service-badge badge-youth px-2 small rounded-2">Youth</span>
+            </div>
+
+            <p class="service-description">
+              Mental health support services tailored for youths and young adults.
+            </p>
+
+            <div class="service-details">
+              <div class="service-detail-item">
+                <strong>Phone:</strong> 6389 2222
+              </div>
+              <div class="service-detail-item">
+                <strong>Hours:</strong> Mon–Fri
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional -->
+          <div class="col service-card">
+            <div class="d-block mx-auto w-100 service-card-header">
+              <h5>Private Counselling Clinics</h5>
+              <span class="service-badge badge-professional px-2 small rounded-2">Professional</span>
+            </div>
+
+            <p class="service-description">
+              Licensed psychologists and counsellors providing professional therapy.
+            </p>
+
+            <div class="service-details">
+              <div class="service-detail-item">
+                <strong>Hours:</strong> By appointment
+              </div>
+            </div>
+          </div>
+
+          <!-- Community -->
+          <div class="col service-card">
+            <div class="d-block mx-auto w-100 service-card-header">
+              <h5>TOUCHline</h5>
+              <span class="service-badge badge-community px-2 small rounded-2">Community</span>
+            </div>
+
+            <p class="service-description">
+              Community-based emotional support and counselling services.
+            </p>
+
+            <div class="service-details">
+              <div class="service-detail-item">
+                <strong>Phone:</strong> 1800 377 2252
+              </div>
+              <div class="service-detail-item">
+                <strong>Hours:</strong> Mon–Fri
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
-      <div class="service-detail-item">
-        <strong>Hours:</strong> 24/7
-      </div>
-    </div>
-
-    <a href="https://www.sos.org.sg" target="_blank" rel="noopener">
-      Visit Website →
-    </a>
-  </div>
-
-  <!-- Youth -->
-  <div class="service-card">
-    <div class="service-card-header">
-      <h5>IMH Youth Mental Health</h5>
-      <span class="service-badge badge-youth">Youth</span>
-    </div>
-
-    <p class="service-description">
-      Mental health support services tailored for youths and young adults.
-    </p>
-
-    <div class="service-details">
-      <div class="service-detail-item">
-        <strong>Phone:</strong> 6389 2222
-      </div>
-      <div class="service-detail-item">
-        <strong>Hours:</strong> Mon–Fri
-      </div>
-    </div>
-  </div>
-
-  <!-- Professional -->
-  <div class="service-card">
-    <div class="service-card-header">
-      <h5>Private Counselling Clinics</h5>
-      <span class="service-badge badge-professional">Professional</span>
-    </div>
-
-    <p class="service-description">
-      Licensed psychologists and counsellors providing professional therapy.
-    </p>
-
-    <div class="service-details">
-      <div class="service-detail-item">
-        <strong>Hours:</strong> By appointment
-      </div>
-    </div>
-  </div>
-
-  <!-- Community -->
-  <div class="service-card">
-    <div class="service-card-header">
-      <h5>TOUCHline</h5>
-      <span class="service-badge badge-community">Community</span>
-    </div>
-
-    <p class="service-description">
-      Community-based emotional support and counselling services.
-    </p>
-
-    <div class="service-details">
-      <div class="service-detail-item">
-        <strong>Phone:</strong> 1800 377 2252
-      </div>
-      <div class="service-detail-item">
-        <strong>Hours:</strong> Mon–Fri
-      </div>
-    </div>
-  </div>
-
-</div>
-
     </section>
 
 
@@ -198,8 +200,8 @@
     <!-- * About Section -->
     <!-- ****************************** -->
     <!-- TODO: About Section -->
-<section id="about-section" class="content-section">
-            <div class="container">
+    <section id="about-section" class="content-section">
+            <div class="container px-4 py-5">
                 <div class="about-content">
                     <h3>About KopiConnect 🌈</h3>
                     <p>We're here to make finding mental health support easy and friendly! Our chatbot listens to your concerns and connects you with the perfect professional services across Singapore. Think of us as your caring companion on the journey to better mental wellness. 💙</p>
@@ -235,7 +237,7 @@
                     </div>
                 </div>
 
-                <div class="emergency-resources">
+                <div class="emergency-resources pt-4">
                     <h4>🚨 Need Help Right Now?</h4>
                     <p>If you're in crisis, please reach out immediately. You're not alone! 💙</p>
                     <ul>
