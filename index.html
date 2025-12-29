@@ -16,9 +16,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- ! TODO: Pick a custom font -->
-    <!-- ! TODO: Choose whether to store all pages into a single HTML file, or separate the pages into their own HTML files and link them. -->
-
     <!-- CSS -->
     <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -28,75 +25,109 @@
     <!-- ****************************** -->
     <!-- * Navigation Section -->
     <!-- ****************************** -->
-    <!-- ! TODO: Navigation Section -->
-    <nav>
+    <!-- DONE: Navigation Section -->
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">KopiConnect</a>
 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" data-section="chatbot">Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-section="about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <!-- ****************************** -->
     <!-- * Chatbot Section -->
     <!-- ****************************** -->
-    <!-- ! TODO: Chatbot Section -->
-    <section>
+    <!-- DONE: Chatbot Section -->
+    <section id="chatbot-section" class="content-section active">
+        <div class="container">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <h4>💬 Let's Chat!</h4>
+                    <button class="btn-clear" id="clearChat">Clear</button>
+                </div>
 
+                <div class="chat-messages" id="chatMessages"></div>
+
+                <div class="chat-input-container">
+                    <input type="text" class="chat-input" id="userInput" placeholder="Type your message here..."
+                        autocomplete="off">
+                    <button class="btn-send" id="sendBtn">Send</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- ****************************** -->
     <!-- * Services Section -->
     <!-- ****************************** -->
-    <!-- ! TODO: Services Section -->
-       <!-- SERVICES SECTION -->
-        <section id="services-section" class="content-section">
-            <div class="container">
-                <div class="services-header">
-                    <h2>Mental Health Services 💙</h2>
-                    <p>Find the perfect support for you ✨</p>
-                </div>
-
-                <div class="search-filter-bar">
-                    <div class="search-wrapper">
-                        <input type="text" class="search-input" id="searchServices" 
-                               placeholder="Search services...">
-                    </div>
-                    
-                    <div class="filter-pills">
-                        <button class="btn-filter active" data-filter="crisis">Crisis</button>
-                        <button class="btn-filter" data-filter="youth">Youth</button>
-                        <button class="btn-filter" data-filter="professional">Professional</button>
-                        <button class="btn-filter" data-filter="community">Community</button>
-                    </div>
-                    
-                    <div class="results-info">
-                        <span id="resultsCount"></span>
-                    </div>
-                </div>
-
-                <div id="servicesGrid" class="services-grid">
-    <div class="service-card">
-        <h5>Samaritans of Singapore</h5>
-        <p class="service-description">
-            24/7 emotional support hotline for anyone in distress.
-        </p>
-    </div>
-</div>
-
+    <!-- DONE: Services Section -->
+    <section id="services-section" class="content-section">
+        <div class="container">
+            <div class="services-header">
+                <h2>Mental Health Services 💙</h2>
+                <p>Find the perfect support for you ✨</p>
             </div>
-        </section>
+
+            <div class="search-filter-bar">
+                <div class="search-wrapper">
+                    <input type="text" class="search-input" id="searchServices" placeholder="Search services...">
+                </div>
+
+                <div class="filter-pills">
+                    <button class="btn-filter active" data-filter="crisis">Crisis</button>
+                    <button class="btn-filter" data-filter="youth">Youth</button>
+                    <button class="btn-filter" data-filter="professional">Professional</button>
+                    <button class="btn-filter" data-filter="community">Community</button>
+                </div>
+
+
+                <div class="results-info">
+                    <span id="resultsCount"></span>
+                </div>
+            </div>
+
+            <div id="servicesGrid" class="services-grid">
+                <div class="service-card">
+                    <h5>Samaritans of Singapore</h5>
+                    <p class="service-description">
+                        24/7 emotional support hotline for anyone in distress.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- ****************************** -->
     <!-- * About Section -->
     <!-- ****************************** -->
-    <!-- ! About Section -->
-    <section>
+    <!-- TODO: About Section -->
 
-    </section>
 
     <!-- ****************************** -->
     <!-- * Footer Section -->
     <!-- ****************************** -->
-    <!-- ! Footer Section -->
-    <footer>
-
+    <!-- DONE: Footer Section -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>Made with 💙 by students | © 2025 KopiConnect</p>
+        </div>
     </footer>
 
     <!-- Bootstrap JS -->
@@ -104,7 +135,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <!-- JavaScript -->
-    <script src=""></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
