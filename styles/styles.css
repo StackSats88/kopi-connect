@@ -113,7 +113,7 @@ body {
 .content-section.active {
     display: block;
     width: auto;
-    height: 100dvh;
+    main-height: 100dvh;
 }
 
 /* ****************************** */
